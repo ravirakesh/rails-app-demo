@@ -1,0 +1,33 @@
+<hr>
+
+<p>
+  <strong>Text:</strong>
+  <%= @article.text %>
+</p>
+
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+ 
+
+<h2>Comments</h2>
+<%= render @article.comments %>
+ 
+
+<h2>Add a comment:</h2>
+
+ 
+
+ <%= link_to 'Destroy Comment', [@article, comment],
+           method: :delete,
+           remote: true,
+           data: { confirm: 'Are you sure?' } %>
+
+
+
+
+<%= link_to 'Back', articles_path %></br>
+| <%= link_to 'Edit', edit_article_path(@article) %>
