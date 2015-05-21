@@ -24,7 +24,11 @@ gem 'jquery-rails'
 gem 'spreadsheet', '~> 1.0.1' 
 gem 'roo'
 gem 'axlsx'
-
+gem 'mina'
+gem 'mina-sidekiq', :require => false
+gem 'mina-unicorn', :require => false
+gem 'capistrano'
+gem 'rvm-capistrano'
 #gem 'Sub-Engine',:require => "Sub-Engine", :path => '../Sub-Engine'
 # Deploy with Capistrano
  gem 'capistrano'
